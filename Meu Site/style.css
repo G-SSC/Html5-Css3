@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+body
+    {
+    background-color:rgb(107, 107, 107);
+    font-family: Arial, Helvetica, sans-serif;
+    }
+.geral
+    {
+    text-decoration:none;
+    padding: 10px;
+    margin: auto;
+    width: 1300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #1a1a1a;
+    }
+pre
+    {
+    background-color:rgb(107, 107, 107);
+    padding: 10px;
+    font-family: "Courgette", sans-serif;
+    font-size:20px;
+    border-radius: 120px 0px ;
+    }
+.fotobola
+    {
+    width:50px ;
+    height: 80px;
+    border-radius: 50%;
+    }
+p#nome 
+    {
+    text-decoration: underline;
+    }
+.inlinetable:hover > ul, .inlinetable:hover > p
+    {
+    display: inline-table;
+    }
+.inlinetable > p
+    {
+    display:none ;
+    padding: 3px;
+    background-color: rgb(107, 107, 107);
+    text-align: center;
+    align-items: center;
+    }
+mark
+    {
+    background-color: rgb(163, 163, 163);
+    }
+section>ul
+    {
+    display: none;
+    width: flex;
+    height: flex;
+    border-radius: 10px;
+    background-image:linear-gradient(to top, rgb(65, 65, 65) 40%, rgb(158, 158, 158));
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px #1a1a1a;
+    }
+
+div>p
+    {
+    display: inline-table;
+    width: flex;
+    height: flex;
+    background-color: rgb(107, 107, 107);
+    margin: 10px;
+    padding: 10px;
+    }
+h1,h2,h3
+    {
+    color: rgb(107, 107, 107);
+    box-shadow: 0px 3px 0px #4e4e4e;
+    }
+h2::after,h3::after
+    {
+    content:"~";
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(107, 107, 107);
+    }
+h2::before,h3::before
+    {
+    content:"~";
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(107, 107, 107);
+    }

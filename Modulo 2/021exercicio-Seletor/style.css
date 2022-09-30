@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body
+    {
+    background-color: rgb(212, 249, 255);
+    }
+h1#principal
+    {
+    color: rgb(18, 73, 75);
+    text-align: center;
+    background-color:rgb(255, 255, 255);;
+    }
+h1,h2,h3
+    {
+    color: rgb(33, 142, 146);
+    }
+.basico
+    {
+    color: rgb(33, 146, 93)
+    }
+.intermediario
+    {
+    color: rgb(144, 146, 33)
+    }
+.avancado
+    {
+    color: rgb(146, 33, 33)
+    }
+.destaque
+    {
+    background-color: white;
+    }

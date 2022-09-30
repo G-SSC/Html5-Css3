@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body
+    {
+    background-color:blueviolet;
+    }
+h1
+    {
+    color:brown;
+    }
+p
+    {
+    text-align: center;
+    }
