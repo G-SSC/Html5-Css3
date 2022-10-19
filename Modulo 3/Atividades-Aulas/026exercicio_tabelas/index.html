@@ -14,10 +14,17 @@
             width: 400px;
             height: 200px;
             border-collapse: collapse;
+            position:relative;
             }
         caption
             {
             font-size: 2em;
+            }
+        table#paises > thead > tr > th
+            {
+            position:sticky;
+            top:-1;
+            background-color: rgb(252, 255, 89);
             }
         table#paises > thead > tr > th, table#paises > tfoot > tr > th
             {
@@ -31,7 +38,7 @@
             }
         table#paises > tbody >tr:nth-child(2n)
             {
-            background-color: lightyellow;
+            background-color: rgb(250, 250, 168);
             }
         tr.linha
             {
@@ -59,17 +66,15 @@
     <table>
         <tr> <!--Primeira Linha-->
             <td>A1</td> 
-            <td>B1</td>
-            <td>C1</td>
+            <td colspan="2">B1</td>
         </tr>
         <tr class="linha">
             <td>A2</td>
-            <td>B2</td>
+            <td rowspan="2">B2</td>
             <td>C2</td>
         </tr>
         <tr>
             <td>A3</td>
-            <td>B3</td>
             <td>C3</td>
         </tr>
         <tr>
@@ -104,12 +109,105 @@
                 <td scope ="row">França</td>
                 <td scope ="row">67,39 milhões</td>
             </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+            <tr>
+                <td scope ="row">Brasil</td>
+                <td scope ="row">215 milhões</td>
+            </tr>
+
         </tbody>
         <tfoot>
             <tr>
                 <th scope="cols">População mundial</th>
                 <th scope="cols">7.98 bilhões</th>
             </tr>
+            
         </tfoot>
     </table>
 </body>
