@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,12 @@
     </style>
 </head>
 <body>
-    Olá
+    <a href="#" onclick="clicou()">Copiar o texto</a>
+    <script>
+        function clicou(){
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>Você Clicou</p>'
+            }
+    </script>
 </body>
 </html>
