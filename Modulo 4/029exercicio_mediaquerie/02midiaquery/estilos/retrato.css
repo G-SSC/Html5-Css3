@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/*Orientação de retrato*/
+
+body
+    {
+        background-color: antiquewhite;
+    background: url(../../imagens/cev-portrait.jpg)
+    }

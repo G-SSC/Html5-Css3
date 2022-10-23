@@ -64,7 +64,8 @@
             </p>
             <p>
                 <label for="itempserv">Satisfação com o serviço</label>
-                <input type="range" name="tempserv" id="itempserv" min="1" max="5" >
+                <input type="range" name="tempserv" id="itempserv" min="1" max="10" oninput="ival.innerHTML = Number(itempserv.value)" >
+                <output name="soma" id="ival">0</output>
             </p>
             <p>
                 <label for="ifoto">Coloque sua foto 3x4</label>
@@ -105,14 +106,33 @@
                 <label for="ipython">Python</label>
             </fieldset>
             <p>
-                <label for="itextarea">Fale sobre você</label>
+                <br>
+                <label for="itextarea">Fale sobre você</label><br>
                 <textarea name="textarea" id="itextarea" cols="30" rows="10"></textarea>
-            </p><br><br>
+            </p>
             <p>
                 <label for="isenha">Senha</label><br>
                 <input type="password" name="senha" id="isenha" required minlength="8" size="8" placeholder="senha" autocomplete="current-password">
             </p>
         </fieldset>
+
+        Calculozinho basico
+
+        <p>
+            <label for="in1">Digite o segundo número</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="in2">Digite o primeiro número</label>
+            <input type="number" name="n2" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+
+        <p>
+            <label for="isoma">Soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+
         <p><input type="submit" value="enviar"></p>
         <p><input type="reset" value="limpar "></p>        
         
