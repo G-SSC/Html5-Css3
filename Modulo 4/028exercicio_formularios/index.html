@@ -40,22 +40,51 @@
                 <input type="date" name="nasci" id="inasci">
             </p>
             <p>
-                <label for="isenha">Senha</label>
-                <input type="password" name="senha" id="isenha" required minlength="8" size="8" placeholder="senha" autocomplete="current-password">
+                <label for="iestado">Nome: </label>
+                <select name="estado" id="iestado">
+                    <option value="" selected>Escolha</option>
+                    <optgroup label="Sudeste">
+                        <option value="mg">Mina Gerais</option>
+                        <option value="rj">Rio de Janeiro</option>
+                        <option value="sp">São Palo</option>
+                    </optgroup>
+                </select>
+
+                <label for="iesp">Especialização</label>
+                <input type="text" name="esp" id="iesp" list="listesp">
+                <datalist id="listesp">
+                    <option> Segurança da Informação</option>
+                    <option alue="RA">Redes Automatizadas</option>
+                </datalist>
+
+            </p>
+            <p>
+                <label for="icorid">Coloque a sua cor de indentificação</label>
+                <input type="color" name="corid" id="icorid">
+            </p>
+            <p>
+                <label for="itempserv">Satisfação com o serviço</label>
+                <input type="range" name="tempserv" id="itempserv" min="1" max="5" >
+            </p>
+            <p>
+                <label for="ifoto">Coloque sua foto 3x4</label>
+                <input type="file" name="foto" id="idfoto">
+            </p>
+            
             </p>
             <fieldset>
                 <legend>Área de empresa</legend>
                 
-                <input type="radio" name="ti" id="iti">
+                <input type="radio" name="areaemp" id="iti" checked>
                 <label for="iti">TI</label>
 
-                <input type="radio" name="rh" id="irh">
+                <input type="radio" name="areaemp" id="irh">
                 <label for="irh">RH</label>
 
-                <input type="radio" name="adm" id="iadm">
+                <input type="radio" name="areaemp" id="iadm">
                 <label for="iadm">Administração</label>
 
-                <input type="radio" name="eng" id="eng">
+                <input type="radio" name="areaemp" id="eng">
                 <label for="ieng">Engenharia</label>
 
 
@@ -75,6 +104,14 @@
                 <input type="checkbox" name="python" id="ipython">
                 <label for="ipython">Python</label>
             </fieldset>
+            <p>
+                <label for="itextarea">Fale sobre você</label>
+                <textarea name="textarea" id="itextarea" cols="30" rows="10"></textarea>
+            </p><br><br>
+            <p>
+                <label for="isenha">Senha</label><br>
+                <input type="password" name="senha" id="isenha" required minlength="8" size="8" placeholder="senha" autocomplete="current-password">
+            </p>
         </fieldset>
         <p><input type="submit" value="enviar"></p>
         <p><input type="reset" value="limpar "></p>        
