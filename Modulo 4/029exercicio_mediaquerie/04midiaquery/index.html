@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Responsivo</title>
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet"/>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
 
@@ -32,11 +33,22 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur error officia eaque inventore ut saepe at. Eligendi a animi distinctio deserunt doloribus tenetur maiores facilis reiciendis atque, ducimus dolore minus.</p>
         </article>
         <script>
+            function mudouTamanho()
+                {
+                if(window.inner.width >= 768)
+                    {
+                    itens.style.display ='block';
+                    }
+                    else
+                        {
+                        itens.style.display = 'none';
+                        }
+                }
             function clickMenu()
                 {
-                if (itens.style.dislay = 'block')
+                if(itens.style.display != 'none')
                     {
-                    itens.style.display = 'none';
+                    itens.style.display = 'none'
                     }
                     else
                         {
