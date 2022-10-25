@@ -37,6 +37,7 @@
         }
     #login > #formulario   
         {
+        float: left;
         width: 100%;
         }
     #formulario > h1
