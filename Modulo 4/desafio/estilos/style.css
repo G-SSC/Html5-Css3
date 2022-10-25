@@ -6,7 +6,7 @@
 */
 
 *   { 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -28,13 +28,14 @@ main
     position:absolute;
     top:50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 520px;
     border-radius: 20px;
+    overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
 
+    transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
     }
@@ -70,6 +71,10 @@ form > .campo
     border-radius: 5px;
     margin: 5px 0px;
     }
+.campo > label
+    {
+    display: none;
+    }
 form > div > input[type=submit]
     {
     display: block;
@@ -80,6 +85,7 @@ form > div > input[type=submit]
     color: white;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     }
 form > div > input[type=submit]:hover
     {
@@ -92,16 +98,19 @@ form > div > .botao
     font-size: 1em;
     width: 100%;
     height: 40px;
-
+    padding-top: 5px;
+    margin-top: 5px;
     background-color: #ffffff;
     color: #2b5f5d;
     border: 1px solid #49a09d;
-    }
-form > div > a.botao > i
-    {
-    font-size: 0.8em;
+    border-radius: 5px;
+    text-decoration: none;
     }
 form > div > .botao:hover
     {
     background-color:#73fffa   
+    }
+form > div > a.botao > i
+    {
+    font-size: 0.8em;
     }
